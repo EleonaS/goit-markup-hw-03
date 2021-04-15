@@ -62,13 +62,16 @@ body {
 .logo-part-two {
   color: var(--logo-text-color);
 }
+.logo {
+  margin-right: 93px;
+}
 
 /*Site-nav*/
 ul {
-  list-style: none;
-  text-decoration: none;
   padding: 0;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 .link {
@@ -78,11 +81,21 @@ ul {
   display: flex;
 }
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
-
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.site-nav .item {
+  outline: 1px solid red;
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0px;
 }
 
 .site-nav .link:hover,
@@ -98,6 +111,9 @@ ul {
 }
 .contacts {
   display: flex;
+}
+.contacts .item + .item {
+  margin-left: 50px;
 }
 .contacts .link {
   color: var(--secondary-text-color);
@@ -164,6 +180,8 @@ ul {
 .section-title {
   margin-top: 0;
   /* margin-bottom: 50px;*/
+  padding-top: 94px;
+  padding-bottom: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
