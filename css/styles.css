@@ -15,7 +15,7 @@ html {
   margin-bottom: 0;
   padding-right: 15px;
   padding-left: 15px;
-  width: 1230px;
+  width: 1200px;
   outline: 2px solid blue;
 }
 :root {
@@ -44,6 +44,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0px;
+}
+
 .page-header .conteiner {
   display: flex;
   align-items: center;
@@ -54,6 +61,8 @@ body {
   margin-right: auto;
 }
 .page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 /*Logo*/
 .logo,
@@ -86,6 +95,7 @@ ul {
 .link {
   text-decoration: none;
 }
+
 .menu {
   display: inline-flex;
 }
@@ -113,13 +123,19 @@ ul {
 .footer-list .link:focus {
   color: var(--accent-color);
 }
+
 .menu .link.current {
   color: var(--accent-color);
 }
 
+/*Contacts*/
 .contacts {
   display: inline-flex;
 }
+.contacts > .item {
+  margin: 0px;
+}
+
 .contacts .item + .item {
   margin-left: 50px;
 }
@@ -132,12 +148,23 @@ ul {
 
 /*Main*/
 .hero {
-  height: 600px;
   background-color: var(--footer-bg-color);
   text-align: center;
 }
+.conteiner .hero-content {
+  margin-left: 252px;
+  margin-right: 252px;
+  text-align: center;
+}
+
+.hero-content {
+  width: calc((100% / 12) * 7);
+
+  /* */
+}
 .hero-title {
-  margin-top: 0;
+  /**/
+
   margin-bottom: 30px;
   color: var(--hero-text-color);
   font-weight: 900;
@@ -149,12 +176,16 @@ ul {
 
 /*Button*/
 .hero-button {
+  margin-right: 200px;
+  margin-left: 200px;
+
+  margin-bottom: 200px;
   min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;
   display: flex;
   align-items: center;
-  text-align: center;
+
   /* background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
   border-radius: 4px;
@@ -170,6 +201,7 @@ ul {
 .hero-button,
 .button {
   color: var(--primary-text-color);
+
   background-color: var(--secondary-bg-color);
   cursor: pointer;
   font-family: inherit;
@@ -189,24 +221,77 @@ ul {
   color: var(--primary-text-color);
 } */
 
-.section-title {
-  margin-top: 0;
-  /* margin-bottom: 50px;*/
+.section {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
+}
+
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
+/*Feature*/
+.section-title {
+  margin-bottom: 50px;
+  /* padding-top: 94px;
+  padding-bottom: 50px;*/
   text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17px;
 }
 
-.title {
+.feature-list {
+  display: flex;
+  flex-wrap: nowrap;
+
+  outline: 1px solid rgb(255, 0, 149);
+  padding: 0px;
+  margin: 0px;
+
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.feature-list > .item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+}
+
+.feature-title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+/*Occupation*/
+.occupation-list {
+  display: flex;
+  flex-wrap: nowrap;
+
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.occupation-list > .item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  text-align: center;
+}
+/*Team*/
+.item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.team-item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  text-align: center;
 }
 
 .team-foto {
@@ -219,6 +304,7 @@ ul {
   margin-bottom: 30px; /* */
   line-height: 1.71;
 }
+
 .team-item-name {
   margin-top: 0;
   margin-bottom: 10px;
@@ -296,7 +382,35 @@ ul {
   border: 1px solid transparent;
 }
 
+.works-list > .item {
+  outline: 1px solid rgb(21, 255, 0);
+  flex-basis: calc((100% - 3 * 30px) / 3);
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.works-list {
+  outline: 1px solid rgb(255, 0, 149);
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.works-foto {
+  margin-bottom: 20px;
+}
+
 .work-title {
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -304,6 +418,10 @@ ul {
 }
 
 .work-title-item {
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.87;
 }
