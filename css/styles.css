@@ -152,8 +152,8 @@ ul {
   text-align: center;
 }
 .conteiner .hero-content {
-  margin-left: 252px;
-  margin-right: 252px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
