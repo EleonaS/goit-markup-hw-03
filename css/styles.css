@@ -61,9 +61,10 @@ p {
   margin-right: auto;
 }
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /*padding-top: 24px;
+  padding-bottom: 25px;*/
 }
+
 /*Logo*/
 .logo,
 .logo-footer {
@@ -151,7 +152,12 @@ ul {
   background-color: var(--footer-bg-color);
   text-align: center;
 }
+
 .conteiner .hero-content {
+  /* margin-top: 200px;
+  margin-bottom: 200px;*/
+  padding-top: 200px;
+  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -176,10 +182,9 @@ ul {
 
 /*Button*/
 .hero-button {
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: auto;
+  margin-left: auto;
 
-  margin-bottom: 200px;
   min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;
@@ -342,8 +347,7 @@ ul {
 .footer {
   background-color: var(--footer-bg-color);
 
-  height: 252px;
-  /*left: 0px;position: absolute;*/
+  /*height: 252px;left: 0px;position: absolute;*/
 }
 .footer .link {
   color: var(--hero-text-color);
@@ -368,8 +372,9 @@ ul {
 /*PORTFOLIO*/
 .btn-p {
   margin-top: 0;
-  margin-bottom: 34px;
+  text-align: center;
 }
+
 .button {
   font-weight: 500;
   font-size: 16px;
@@ -380,6 +385,22 @@ ul {
   border-radius: 4px;
   padding: 6px 22px;
   border: 1px solid transparent;
+}
+
+.button-list {
+  display: inline-flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button-list .button {
+  display: block;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .works-list > .item {
