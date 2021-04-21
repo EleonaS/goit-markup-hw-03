@@ -16,7 +16,7 @@ html {
   padding-right: 15px;
   padding-left: 15px;
   width: 1200px;
-  outline: 2px solid blue;
+  /*outline: 2px solid blue;*/
 }
 :root {
   --primary-text-color: #212121;
@@ -117,7 +117,7 @@ ul {
 }
 
 .menu-item:not(:last-child) {
-  outline: 1px solid red; /*убрать*/
+  /*outline: 1px solid red;*/
   margin-right: 50px;
 }
 
@@ -159,8 +159,6 @@ ul {
 }
 
 .conteiner .hero-content {
-  /* margin-top: 200px;
-  margin-bottom: 200px;*/
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -170,13 +168,11 @@ ul {
 
 .hero-content {
   width: calc((100% / 12) * 7);
-
-  /* */
 }
-.hero-title {
-  /**/
 
+.hero-title {
   margin-bottom: 30px;
+
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -204,7 +200,6 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
   letter-spacing: 0.06em;
 }
 
@@ -225,12 +220,6 @@ ul {
   background-color: var(--accent-color);
 }
 
-/*
-.section-title,
-.feature-list.title .team-item-name {
-  color: var(--primary-text-color);
-} */
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -247,7 +236,7 @@ ul {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
@@ -255,10 +244,8 @@ ul {
   display: flex;
   flex-wrap: nowrap;
 
-  outline: 1px solid rgb(255, 0, 149);
   padding: 0px;
   margin: 0px;
-
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -275,10 +262,12 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 /*Occupation*/
 .work.section {
   padding-top: 0px;
 }
+
 .occupation-list {
   display: flex;
   flex-wrap: nowrap;
@@ -286,15 +275,18 @@ ul {
   margin-top: -30px;
   margin-left: -30px;
 }
+
 .occupation-list > .item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   text-align: center;
 }
+
 /*Team*/
 .item {
   margin-top: 30px;
   margin-left: 30px;
 }
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -315,7 +307,7 @@ ul {
 
 .title-item {
   margin-top: 0;
-  margin-bottom: 30px; /* */
+  margin-bottom: 30px;
   line-height: 1.71;
 }
 
@@ -325,6 +317,7 @@ ul {
   text-align: center;
   background-color: var(--hero-text-color);
 }
+
 .team-item-name {
   margin-top: 0;
   margin-bottom: 10px;
@@ -335,10 +328,10 @@ ul {
 
 .team-item-position {
   margin-top: 0;
-
   font-size: 16px;
   line-height: 1.19;
 }
+
 .title-item,
 .team-item-position,
 .work-title-item {
@@ -362,11 +355,11 @@ ul {
 .logo-footer.link {
   margin: 0px;
 }
+
 .footer {
   background-color: var(--footer-bg-color);
-
-  /*height: 252px;left: 0px;position: absolute;*/
 }
+
 .footer-nav {
   width: calc(100% / 12 * 3);
   padding-top: 60px;
@@ -389,9 +382,11 @@ ul {
 .footer-contacts .link {
   color: var(--footer-contact-color);
 }
+
 .footer-contacts {
   margin-top: 9px;
 }
+
 .logo-part-t {
   color: var(--hero-text-color);
 }
@@ -444,7 +439,7 @@ img {
 }
 
 .works-list {
-  outline: 1px solid rgb(255, 0, 149);
+  /* outline: 1px solid rgb(255, 0, 149);*/
   padding: 0px;
   margin: 0px;
   list-style: none;
