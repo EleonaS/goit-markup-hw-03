@@ -398,6 +398,7 @@ ul {
 /*PORTFOLIO*/
 .btn-p {
   margin-top: 0;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -421,7 +422,7 @@ ul {
 
 .button-list .button {
   display: block;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
 }
 
 .button-item:not(:last-child) {
